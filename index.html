@@ -8,10 +8,11 @@
 </head>
 <body>
     <div class="container marketing my-5 p-5 bg-white rounded shadow-sm text-center">
+        <form action="transmitir.php" method="POST" class="formLogin">
         <!-- EMAIL LOGIN-->
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com.br">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com.br" name="email">
         </div>
         <!-- FINAL - EMAIL LOGIN-->
         
@@ -25,9 +26,10 @@
 
         <!-- BOTÃO LOGIN-->
         <div>
-            <button type="button" class="btn btn-primary">LOGIN</button>
+            <input type="submit" value="LOGIN" class="btn btn-sucess">
         </div>
         <!-- FINAL - BOTÃO LOGIN-->
+       </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
